@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+* {
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    margin: 0;
+}
+
+/* Shared Color start */
+
+.primary-h-style {
+    color: #3A3A3A;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.btn-primary {
+    padding: 10px 30px;
+    border-radius: 41px;
+    background: #E02C6D;
+    border: 0;
+    font-weight: 700;
+    color: white;
+}
+
+.primary-p-style {}
+
+/* Shared Color End */
+
+
+header {
+    padding: 20px 125px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+
+
+}
+
+ul>li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+li>img {
+    width: 10%;
+}
+
+li>a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 1.2rem;
+}
+
+/* banner container */
+
+.banner-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.banner-content h1 {
+    font-size: 3.3rem;
+}
+
+.banner-content p {
+    font-size: 1rem;
+    color: #3A3A3A;
+    font-weight: 600;
+}
+
+.banner-img {
+    background-image: url(images/Circle\ design.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+}
+
+.banner-img img {
+    width: 100%;
+
+}
+
+/* Brand Style */
+
+.brand-name {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.brand-name img {
+    margin-left: 50px;
+}
+
+
+/* Popular Collection */
+
+#popular {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 50px 200px 50px 170px;
+}
+
+.card {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+
+.card-price {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.card p {
+    color: #787885;
+    font-weight: 500;
+}
+
+.see-more {
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-align: right;
+    margin-right: 145px;
+}
+
+/* Features */
+
+.features {
+    display: flex;
+    margin: 50px 160px;
+    gap: 70px;
+    align-items: center;
+}
+
+.features-title {
+    color: #0A0826;
+    font-size: 2.3;
+    font-weight: 700;
+
+}
+
+.btn-primary-2 {
+    padding: 10px 30px;
+    background: #E02C6D;
+    border: 0;
+    font-weight: 700;
+    color: white;
+}
+
+.features-description {
+    color: #6C6C6C;
+    font-weight: 500;
+}
+
+/* footer section */
+
+footer {
+    text-align: center;
+    background: #0A0826;
+    padding: 30px;
+
+}
+
+.footer-content {
+    color: white;
+}
+
+.footer-content h2,
+h4,
+h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer-title {}
+
+.footer-icon {
+    display: flex;
+    gap: 15px;
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.footer-icon img {
+    width: 35px;
+}
+
+
+/* Responsive Device */
+
+/* Mobile Device */
+
+@media screen and (max-width:576px) {
+
+    header {
+        padding: 10px 20px;
+    }
+
+    .header h3 {
+        margin-top: 30px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+    .banner-content h1 {
+        font-size: 2.8rem;
+        padding: 10px 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
+    .banner-img {
+        margin: 0 auto;
+        padding: 10px 0px;
+    }
+
+    .brand-name img {
+        margin-left: 30px;
+        align-items: center;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 5px 10px;
+    }
+
+    .card img {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .see-more {
+        margin: 0 20px 0 0;
+        text-align: right;
+    }
+
+    .features {
+        flex-direction: column-reverse;
+    }
+
+    .features-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .features-title {
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+
+
+}
+
+
+/* Tablet or Laptop */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    header {
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header h3 {
+        margin-top: 30px;
+    }
+
+    .banner-content h1 {
+        font-size: 1.8rem;
+        padding: 10px 10px;
+        margin: 0 auto;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
+    .brand-name img {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 5px 10px;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .card {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .card img {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .see-more {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+}
