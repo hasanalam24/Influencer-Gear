@@ -8,6 +8,7 @@
 
 body {
     margin: 0;
+    padding: 0;
 }
 
 /* Shared Color start */
@@ -118,8 +119,8 @@ li>a {
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin: 50px 200px 50px 170px;
+    gap: 20px;
+    margin: 50px 50px;
 }
 
 .card {
@@ -127,6 +128,11 @@ li>a {
     background: #FFF;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     padding: 15px;
+    width: 85%;
+}
+
+.card img {
+    width: 100%;
 }
 
 .card-price {
@@ -201,19 +207,16 @@ h5 {
     margin-bottom: 0;
 }
 
-.footer-title {}
-
 .footer-icon {
-    display: flex;
-    gap: 15px;
-    text-align: center;
+    margin-top: 10px;
 
-    margin-top: 20px;
 }
 
-.footer-icon img {
-    width: 35px;
+.fa-brands,
+.fa-solid {
+    margin-left: 10px;
 }
+
 
 
 /* Responsive Device */
@@ -234,6 +237,10 @@ h5 {
         flex-direction: column;
     }
 
+    nav ul {
+        padding-left: 0;
+    }
+
     .banner-container {
         flex-direction: column-reverse;
     }
@@ -243,10 +250,8 @@ h5 {
     }
 
     .banner-content h1 {
-        font-size: 2.8rem;
-        padding: 10px 10px;
-        margin: 0 auto;
-        text-align: center;
+        font-size: 1.5rem;
+        padding: 0 auto;
     }
 
     .banner-img img {
@@ -268,9 +273,14 @@ h5 {
         margin: 5px 10px;
     }
 
+    .card {
+        margin: 0 auto;
+    }
+
     .card img {
         text-align: center;
         margin: 0 auto;
+        width: 100%;
     }
 
     .see-more {
@@ -280,6 +290,10 @@ h5 {
 
     .features {
         flex-direction: column-reverse;
+        margin: 10px 10px;
+        text-align: center;
+        gap: 10px;
+
     }
 
     .features-content {
@@ -292,6 +306,9 @@ h5 {
         font-weight: 600;
     }
 
+    .features-img img {
+        width: 100%;
+    }
 
 }
 
@@ -308,8 +325,17 @@ h5 {
         flex-direction: column;
     }
 
+    nav ul {
+        padding: 0;
+    }
+
     .header h3 {
         margin-top: 30px;
+    }
+
+    #popular {
+        margin-top: 30px;
+
     }
 
     .banner-content h1 {
@@ -335,7 +361,7 @@ h5 {
     }
 
     .card {
-        width: 320px;
+        width: 85%;
         margin: 0 auto;
     }
 
@@ -350,5 +376,25 @@ h5 {
         text-align: center;
     }
 
+    .features {
+        display: block;
+        margin: 0 auto;
+        gap: 20px;
+        width: 100%;
+        text-align: center;
+    }
 
+    .features-img img {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .features-title {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
 }
